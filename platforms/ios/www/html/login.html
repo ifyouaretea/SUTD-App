@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- Main page of the application -->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="../css/login.css" />
+        <title>Log-in Page</title>
+    </head>
+    <body>
+        <section class="container">
+            <div id="login_form">
+            <p align="center">Welcome to SUTD STUDENT APPLICATION</p>
+            <h1>Log-in</h1>
+                <form>
+                    <div class="form-group">
+                        <label>User ID</label>
+                        <input type="text" class="form-control" id="login_username">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" class="form-control" id="login_password" placeholder="Password">
+                    </div>
+                    <h5 id='returnresults'></h5>
+                    <div class="form-group">
+                        <input type="checkbox"> Remember me
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </div>
+                    <div class="form-group">
+                        Don't have an account yet? <br>
+                        <a href="signup.html">Sign-up</a> here!
+                    </div>
+                    <div class="form-group">
+                        Forgot your password? <br>
+                        Reset your password <a href="forgotpassword.html">here</a>!
+                    </div>
+                    <h5>Version 0.1</h5>
+                </form>
+            </div>
+        </section>
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/login.js"></script>
+    </body>
+</html>
+
+
+
+
+
+

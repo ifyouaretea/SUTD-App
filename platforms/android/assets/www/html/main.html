@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- Main page of the application -->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="../css/login.css" />
+        <link rel="stylesheet" href="../css/swiper.min.css" />
+        <style>
+            .swiper-container {
+                width: 100%;
+            }
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+                /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+            }  
+        </style>
+        <title>Main</title>
+    </head>
+    <body>
+
+        <section class="container-fluid hidden">
+            <!--<h2>Main.html</h2>
+            <a href="#" onclick="window.open('http://sutdmap.appspot.com', '_system');">SUTD MAP</a>-->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <section class="container">
+                            <div class="row">
+                              <div class="col-md-12">
+                                  <div class="page-header">
+                                    <h2>Menu</h2>
+                                    </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                  <div>
+                                    <a href="#" onclick="window.open('http://sutdmap.appspot.com', '_system');">SUTD MAP</a>
+                                  </div>
+                              </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2 class="page-header">Wall</h2>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2 class="page-header">News/Notifications</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/swiper.min.js"></script>
+        <script type="text/javascript">
+
+          $(document).ready(function () {
+            //initialize swiper when document ready  
+            var windowheight = $( window ).height();
+            $(".container-fluid").removeClass("hidden");
+            var swiper = new Swiper('.swiper-container', {
+                initialSlide: 1,
+                speed: 100
+            });
+
+          });
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
